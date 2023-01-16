@@ -1,6 +1,6 @@
 # Arduino nano 33 ble sense (research notes)
-Create Date: 2021/03/17
-Board info: https://store.arduino.cc/usa/nano-33-ble-sense
+<!-- Create Date: 2021/03/17 -->
+> Board info: https://store.arduino.cc/usa/nano-33-ble-sense; 
 Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
 
 ## Getting started: installation 
@@ -10,8 +10,7 @@ Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
     * 燒錄器(programmer)設定為`AVRISP mkll`
 * On Arduino web editor:
     * Sign in: https://create.arduino.cc/editor/chiahong95
-    * Install **Arduino Create Agent**: https://create.arduino.cc/getting-started/plugin/install (So that web editor could detect your board which is connected to PC via USB port!)
-     ![](https://i.imgur.com/fWfQ0LV.png)
+    * Install **Arduino Create Agent**: https://create.arduino.cc/getting-started/plugin/install (So that web editor could detect your board which is connected to PC via USB port!)<img src="https://i.imgur.com/fWfQ0LV.png" height="400" />
     * Search for libraries you need!
 
 ## TensorFlow Lite for Microcontrollers examples
@@ -24,13 +23,16 @@ Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
 <!-- > * Github: https://github.com/arduino/ArduinoTensorFlowLiteTutorials/tree/master/GestureToEmoji
 > * Colab: https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb -->
 
-* 在Arduino執行`IMU_Capture.ino`來搜集姿勢資料>複製序列埠data>將一種姿勢資料做成.csv檔案。<font color="red">記得將空白列利用excel刪除(否則訓練時會出現nan錯誤)。</font>
-* 開啟`arduino_gesture_recog.ipynb`>匯入flex.csv與punch.csv檔案>進行訓練>匯出`model.h`
+* 在Arduino執行`IMU_Capture.ino`來搜集姿勢資料(手握Arduino進行flex與punch兩種動作，或其他預進行辨識的動作) > 複製序列埠data > 將一種姿勢資料做成.csv檔案。<font color="red">記得將空白列利用excel刪除(否則訓練時會出現nan錯誤)。</font>
+* 開啟`arduino_gesture_recog.ipynb` > 匯入flex.csv與punch.csv檔案 > 進行訓練 > 匯出`model.h`
 * 回到Arduino開啟`IMU_Classifier.ino`
-* 在Arduino新增Tab>命名為model.h>將由colab匯出之model.h內容複製貼上。(或是直接將model.h放置於IMU_Classifier資料夾內)
-* 最後編譯上傳IMU_Classifier.ino至開發版，開啟序列埠
-![](https://i.imgur.com/ZNKg8yy.png =300x200)
-* Future Attempt: 利用Emoji_Button.ino來輸出Gesture圖案
+* 在Arduino新增Tab > 命名為`model.h` > 將由colab匯出之`model.h`內容複製貼上。(或是直接將`model.h`放置於IMU_Classifier資料夾內)
+* 最後編譯上傳`IMU_Classifier.ino`至開發版，開啟序列埠
+   * 執行flex動作時，序列埠呈現：  
+      <img src="https://i.imgur.com/u9mqD9H.png" height="100" />
+   * 執行punch動作時，序列埠呈現：  
+      <img src="https://i.imgur.com/c01DntD.png" height="100" />
+* Future Attempt: 利用`Emoji_Button.ino`來輸出Gesture圖案
 * Other pojects: https://create.arduino.cc/projecthub/dgiancono/nano33blesensor-getting-started-with-the-nano-33-ble-sense-8a7eba
 
 <!-- # <font color="lighblue">To be Continued...</font> -->
