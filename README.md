@@ -2,12 +2,12 @@
 Create Date: 2021/03/17
 Board info: https://store.arduino.cc/usa/nano-33-ble-sense
 Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
-###### tags: `Arduino On-chip AI`
+
 ## Getting started: installation 
 * On Arduino app:
     * **下載程式褲**：Arduino>工具>管理程式庫>搜尋Arduino_TensorFlowLite & Arduino_LSM9DS1 & ArduinoBLE,etc>安裝
     * **下載開發版**：Arduino>開發版->開發版管理員>搜尋Arduino nRF528x Boards (Mbed OS)或Arduino Nano 33 bl>安裝
-    * 燒錄器(programmer)記得設定為`AVRISP mkll`
+    * 燒錄器(programmer)設定為`AVRISP mkll`
 * On Arduino web editor:
     * Sign in: https://create.arduino.cc/editor/chiahong95
     * Install **Arduino Create Agent**: https://create.arduino.cc/getting-started/plugin/install (So that web editor could detect your board which is connected to PC via USB port!)
