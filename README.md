@@ -1,7 +1,7 @@
 # Gesture Recognition Arduino nano 33 ble sense (implementation notes)
 <!-- Create Date: 2021/03/17 -->
-> Board info: https://store.arduino.cc/usa/nano-33-ble-sense; 
-Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
+> Board info: https://store.arduino.cc/usa/nano-33-ble-sense  
+> Arduino On-chip AI: https://www.arduino.cc/en/AI/HomePage
 
 ## Getting started: installation 
 * On Arduino app:
