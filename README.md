@@ -5,8 +5,8 @@
 
 ## Getting started: installation 
 * On Arduino app:
-    * **下載程式褲**：Arduino>工具>管理程式庫>搜尋Arduino_TensorFlowLite & Arduino_LSM9DS1 & ArduinoBLE,etc>安裝
-    * **下載開發版**：Arduino>開發版->開發版管理員>搜尋Arduino nRF528x Boards (Mbed OS)或Arduino Nano 33 bl>安裝
+    * **下載程式褲**：Arduino > 工具 > 管理程式庫 > 搜尋Arduino_TensorFlowLite & Arduino_LSM9DS1 & ArduinoBLE,etc > Install
+    * **下載開發版**：Arduino > 開發版 > 開發版管理員 > 搜尋Arduino nRF528x Boards (Mbed OS)或Arduino Nano 33 bl > install
     * 燒錄器(programmer)設定為`AVRISP mkll`
 * On Arduino web editor:
     * Sign in: https://create.arduino.cc/editor/chiahong95
