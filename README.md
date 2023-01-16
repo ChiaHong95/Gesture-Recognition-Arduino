@@ -9,7 +9,7 @@
     * **下載開發版**：Arduino :arrow_right: 開發版 :arrow_right: 開發版管理員 :arrow_right: 搜尋Arduino nRF528x Boards (Mbed OS)或Arduino Nano 33 bl > install
     * 燒錄器(programmer)設定為`AVRISP mkll`
 * On Arduino web editor:
-    * Sign in: https://create.arduino.cc/editor/chiahong95
+    * Sign in: https://create.arduino.cc
     * Install **Arduino Create Agent**: https://create.arduino.cc/getting-started/plugin/install (So that web editor could detect your board which is connected to PC via USB port!)<img src="https://i.imgur.com/fWfQ0LV.png" height="400" />
     * Search for libraries you need!
 
