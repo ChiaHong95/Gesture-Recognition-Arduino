@@ -23,7 +23,7 @@
 <!-- > * Github: https://github.com/arduino/ArduinoTensorFlowLiteTutorials/tree/master/GestureToEmoji
 > * Colab: https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb -->
 
-* 在Arduino執行`IMU_Capture.ino`來搜集姿勢資料(手握Arduino進行flex與punch兩種動作，或其他預進行辨識的動作) :arrow_right: 複製序列埠data :arrow_right: 將一種姿勢資料做成.csv檔案。記得將空白列刪除(可透過excel)，否則訓練時會出現nan錯誤。
+* 在Arduino執行`IMU_Capture.ino`來搜集姿勢資料(手握Arduino進行flex與punch兩種動作，或其他欲進行辨識的動作) :arrow_right: 複製序列埠data :arrow_right: 將一種姿勢資料做成.csv檔案。記得將空白列刪除(可透過excel)，否則訓練時會出現nan錯誤。
 * 開啟`arduino_gesture_recog.ipynb` :arrow_right: 匯入flex.csv與punch.csv檔案 :arrow_right: 進行訓練 :arrow_right: 匯出`model.h`
 * 回到Arduino開啟`IMU_Classifier.ino`
 * 在Arduino新增Tab :arrow_right: 命名為`model.h` :arrow_right: 將由colab(ipynb file)匯出之`model.h`內容複製貼上。(或是直接將`model.h`放置於IMU_Classifier資料夾內)
